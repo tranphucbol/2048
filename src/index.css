@@ -27,7 +27,9 @@ orange: #E99B5D
 32: #F57C5F
 64: #E95937
 128: #F3D96B
-512: #E5BF2C
+256: #F4D048
+512: #EABC33
+2048: #E5BF2C
 */
 
 .app {
@@ -91,4 +93,44 @@ orange: #E99B5D
 .color-8 {
   color: #fff;
   background: #F2B179
+}
+
+.color-16 {
+  color: #fff;
+  background: #EC8F54;
+}
+
+.color-32 {
+  color: #fff;
+  background: #F57C5F;
+}
+
+.color-64 {
+  color: #fff;
+  background: #E95937
+}
+
+.color-128 {
+  color: #fff;
+  background: #F3D96B
+}
+
+.color-256 {
+  color: #fff;
+  background: #F4D048
+}
+
+.color-512 {
+  color: #fff;
+  background:#EABC33
+}
+
+.color-1024 {
+  color: #fff;
+  background: #E2B913
+}
+
+.color-2048 {
+  color: #fff;
+  background: #E5BF2C
 }
