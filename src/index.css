@@ -11,3 +11,84 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/*
+background-1: #FBF8EF
+background-2: #BCAEA1
+text-1: #FFFFFF
+text-2: #7A7168
+yellow: #ECC400
+orange: #E99B5D
+0: #CCC0B4
+2: #EEE4DA
+4: #ECE0C8
+8: #F2B179
+16: #EC8F54
+32: #F57C5F
+64: #E95937
+128: #F3D96B
+512: #E5BF2C
+*/
+
+.app {
+  background-color: #FBF8EF;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.board {
+  border-radius: 5px;
+  background: #BCAEA1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.row {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.row:last-child {
+  margin-bottom: 0;
+}
+
+
+.cell {
+  width: 60px;
+  height: 60px;
+  color: #7A7168;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 5px;
+  background: #CCC0B4;
+  margin-right: 10px;
+}
+
+.cell:last-child {
+  margin-right: 0;
+}
+
+
+.color-0 {
+  color: #7A7168;
+}
+
+.color-2 {
+  background: #EEE4DA
+}
+
+.color-4 {
+  background: #ECE0C8
+}
+
+.color-8 {
+  color: #fff;
+  background: #F2B179
+}
