@@ -2,7 +2,7 @@
 const generate = () => {
     let board = []
     for(let i = 0; i < 16; i++) {
-        board.push({value: 0})
+        board.push({value: 0, old: -1})
     }
 
     generateRandom(board)
@@ -21,6 +21,7 @@ const generateRandom = (board) => {
         while(board[index].value !== 0)
             index = Math.floor(Math.random() * 16)
         board[index].value = Math.floor(Math.random() * 10) > 7 ? 4 : 2;
+        board[index].old = -1;
     }
 
     return board;
@@ -57,12 +58,13 @@ const move = (board, action) => {
                 y = y - action.y
 
                 board[x * size + y].value = board[i * size + j].value
-                if(i !== x || j !== y)
+                if(i !== x || j !== y) {
                     board[i * size + j].value = 0
+                    board[x * size + y].old = i * size + j
+                }
             } 
         }
     }
-    console.log('move')
 }
 
 const join = (board, action) => {
@@ -92,7 +94,6 @@ const join = (board, action) => {
             }
         }
     }
-    console.log('join')
 }
 
 const plusCell = (board, action) => {

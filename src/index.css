@@ -71,6 +71,7 @@ orange: #E99B5D
   border-radius: 5px;
   background: #CCC0B4;
   margin-right: 10px;
+  /* transition: linear 0.5s all; */
 }
 
 .cell:last-child {
@@ -134,3 +135,4 @@ orange: #E99B5D
   color: #fff;
   background: #E5BF2C
 }
+
